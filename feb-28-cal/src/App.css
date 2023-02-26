@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+}
+
+.new-calc {
+  display: flex;
+  justify-content: center;
+}
