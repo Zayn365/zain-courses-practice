@@ -1,0 +1,123 @@
+@font-face {
+  font-family: Granite;
+  src: url(../public/assets/font/GranitaDemoRegular.ttf);
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-family: Granite !important;
+  color: aliceblue;
+}
+
+.Navigate {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to right, #d3cce326, #e9e4f026); }
+
+.Navigate ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.Navigate ul li {
+  padding-right: 10px;
+  padding-top: 13px;
+}
+
+.Navigate a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+.Navigate a:hover {
+  color: grey;
+}
+.SignUpForm {
+  position: relative;
+  top: 13vh;
+}
+.SignUpForm form {
+  display: inline-grid;
+}
+.SignUpForm label {
+  color: rgba(240, 248, 255);
+  font-size: 24px;
+  font-family: Granite;
+}
+.SignUpForm input {
+  width: 260px;
+  height: 25px;
+  border: solid 1px #000000 !important;
+  background-color: #43434347;
+  border-radius: 10px ;
+  text-align: center;
+}
+
+.SignUpForm button {
+  height: 50px;
+  border: solid 2px #000000 !important;
+  background-color: #43434374;
+  color: aliceblue;
+  font-family: Granite;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.SignUpForm button:hover {
+  background-color: rgba(240, 248, 255, 0.137);
+  color: #000000;
+  border: solid 2px #434343 !important;
+}
+
+.list-main {
+  display: flex;
+  justify-content: center;
+}
+
+.list-main h2 {
+  font-family: Granite;
+  color: #fff;
+}
+
+.setting {
+  position: relative;
+  top: 13vh;
+}
+.setting form {
+  display: inline-grid;
+}
+.setting label {
+  color: rgba(240, 248, 255);
+  font-size: 24px;
+  font-family: Granite;
+}
+.setting input {
+  width: 260px;
+  height: 25px;
+  border: solid 1px #000000 !important;
+  background-color: #43434347;
+  border-radius: 10px ;
+  text-align: center;
+}
+
+.setting button {
+  height: 50px;
+  border: solid 2px #000000 !important;
+  background-color: #43434374;
+  color: aliceblue;
+  font-family: Granite;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.setting button:hover {
+  background-color: rgba(240, 248, 255, 0.137);
+  color: #000000;
+  border: solid 2px #434343 !important;
+}
