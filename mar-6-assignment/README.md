@@ -6,7 +6,7 @@ This web app is built using React and utilizes contextAPI and React Private Rout
 
 ## SreenShots 📹
 [![Home](./video/3.png)](./video/3.png)
-[![signUp/signIn](./video/2.png)](./video/2.png)
+[![signUp/signIn](./video/4.png)](./video/4.png)
 [![settings](./video/1.png)](./video/1.png)
 
 ## Demo Videos 🎥
@@ -21,7 +21,7 @@ Watch a demo of the app's main features by clicking the link below:
 
 Check out a video showcasing the app's 'add me' feature:
 
-[![Add-Me Video](./video/2.png)](./video/add-me.mp4)
+[![Add-Me Video](./video/4.png)](./video/add-me.mp4)
 
 ## Technologies Used 🛠️
 
