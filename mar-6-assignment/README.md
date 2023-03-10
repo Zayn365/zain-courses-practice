@@ -4,19 +4,24 @@
 
 This web app is built using React and utilizes contextAPI and React Private Routing. The app allows users to access private routes only after authentication.
 
+## SreenShots 📹
+[![Home](./video/3.png)](./video/3.png)
+[![signUp/signIn](./video/2.png)](./video/2.png)
+[![settings](./video/1.png)](./video/1.png)
+
 ## Demo Videos 🎥
 
 ### Main Video 📹
 
 Watch a demo of the app's main features by clicking the link below:
 
-[![Main Video](./video/main.mp4)](./video/main.mp4)
+[![Main Video](./video/3.png)](./video/main.mp4)
 
 ### Add-Me Video 📹
 
 Check out a video showcasing the app's 'add me' feature:
 
-[![Add-Me Video](./video/add-me.mp4)](./video/add-me.mp4)
+[![Add-Me Video](./video/2.png)](./video/add-me.mp4)
 
 ## Technologies Used 🛠️
 
