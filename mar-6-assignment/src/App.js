@@ -4,10 +4,13 @@ import Navigate from './components/includes/Navigate';
 import Auth from './Context';
 import HelperFunctions from './components/hooks/HelperFunctions';
 import AuthFunc from './components/hooks/AuthFunc';
+import Toggle from './components/hooks/Toggle';
 
 function App() {
-  const [task ,handleTask, list , submitList , updTask , submitUpdTask , handleUpdate , handleRemove ] = HelperFunctions();
+  const [task ,handleTask, list , submitList , updTask , submitUpdTask , handleUpdate , handleRemove, idStore , handleIdStore ] = HelperFunctions();
   const [ autho , submitAuth  , email , handleEmail , password ,handlePassword , userName , handleUserName , handleConfirm] = AuthFunc(); 
+  const [logIn , handleLogIn , toggleUpd , handletoggleUpd] = Toggle();
+
   return (
     <div className="App">
     <Auth.Provider 
@@ -27,7 +30,17 @@ function App() {
             updTask , 
             submitUpdTask , 
             handleUpdate , 
-            handleRemove }}>
+            handleRemove ,
+            logIn , 
+            handleLogIn , 
+            toggleUpd , 
+            handletoggleUpd,
+            logIn,
+            handleLogIn , 
+            toggleUpd , 
+            handletoggleUpd, 
+            idStore , 
+            handleIdStore}}>
       <Navigate />
       <MyRoutes />
     </Auth.Provider>

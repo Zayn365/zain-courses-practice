@@ -6,6 +6,7 @@ import About from './../pages/About';
 import Contact from './../pages/Contact';
 import Settings from './../pages/Settings';
 import SignIn from '../pages/SignIn';
+import Error from '../pages/Error';
 import Auth from '../../Context';
 
 
@@ -18,7 +19,7 @@ const MyRoutes = () => {
             <Route exact path="/" element={<Home list={x.list} />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/contact" element={<Contact />} />
-            <Route exact path="/setting" element={<Settings />} />
+            <Route exact path="/setting" element={!x.logIn ? <Error /> : <Settings />} />
             <Route exact path="/signin-signup" element={<SignIn auth={x.autho} />} />
         </Routes>
     </div>

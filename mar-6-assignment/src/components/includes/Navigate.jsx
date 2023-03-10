@@ -5,6 +5,7 @@ import Auth from '../../Context'
 
 const Navigate = () => {
   const x = useContext(Auth)
+  // console.log(...x.autho);
   return (
     <div className='Navigate'>
        <img src='assets/img/logo.png' width="160px"  alt="logo" /> 
@@ -18,7 +19,7 @@ const Navigate = () => {
           {!x.logIn ?
           <li><Link exact to="/signin-signup">Signup/Signin</Link></li>
            : 
-          <li><Link exact to="/setting"><span>{x.autho.username.toUpperCase()}</span> | <span style={{color: 'lightgreen'}} onClick={x.setLogIn(!x.logIn)}>LogOut</span></Link></li>
+          <li><Link exact to="/"><span>{x.userName.toUpperCase()}</span> | <span style={{color: 'lightgreen'}} onClick={() => x.handleLogIn()}>LogOut</span></Link></li>
           }
        </ul>
        <Outlet />

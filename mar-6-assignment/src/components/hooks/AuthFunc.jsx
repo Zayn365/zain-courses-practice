@@ -5,8 +5,7 @@ function AuthFunc() {
 const [email , setEmail] = useState('');
 const [password , setPassword] = useState('');
 const [userName , setUserName] = useState('');
-const [logIn , setLogIn] = useState(true);
-const [autho , setAutho] = useState({username: 'zain',email: 'zain@gmail.com' , password: '123456'});
+const [autho , setAutho] = useState([{username: 'zain',email: 'zain@gmail.com' , password: '123456'}]);
 
 function handleEmail(e) {
         setEmail(e.target.value);
@@ -18,20 +17,21 @@ function handleUserName (e) {
         setUserName(e.target.value);
 }     
 function submitAuth() {
-        setAutho({username: userName, email: email , password: password});
+        setAutho([{username: userName, email: email , password: password}, ...autho]);
      }
-function handleLogIn () {
-        setLogIn(!logIn);
-}     
+// const spreadAuth = [...autho];
+// console.log(...spreadAuth);  
 function handleConfirm(){
-        if(email === autho.email && password === autho.password){
+        const emailFilter = autho.find(val => val.email === email);
+        const passFilter = autho.find(val => val.password === password )
+        if(emailFilter === passFilter){
                 alert("Correct");
         }
         else {
                 alert("InCorrect")
         }
 }     
-return [ autho , submitAuth  , email , handleEmail , password ,handlePassword , userName , handleUserName , handleConfirm, logIn , handleLogIn];          
+return [ autho , submitAuth  , email , handleEmail , password ,handlePassword , userName , handleUserName , handleConfirm];          
 }
 
 

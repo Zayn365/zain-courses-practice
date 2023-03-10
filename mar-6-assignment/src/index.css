@@ -9,6 +9,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+ul {
+  list-style-type: none;
+}
 @media(max-width: 1012px){
   body{
     background-size: inherit;

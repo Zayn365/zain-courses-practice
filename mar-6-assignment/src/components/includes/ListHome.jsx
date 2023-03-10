@@ -2,7 +2,7 @@ import React from 'react'
 import { useContext } from 'react'
 import Auth from '../../Context'
 
-const List = props => {
+const ListNew = props => {
   const x = useContext(Auth);
   // console.log(x.handletoggleUpd);
 //  console.log(location);
@@ -12,7 +12,6 @@ const List = props => {
             return <>
              <ul key={key} >
                 <li key={val.id}>{val.task}</li>
-                <li><button onClick={() => {x.handletoggleUpd(); x.handleIdStore(val.id)}}>Update</button> | <button onClick={() => x.handleRemove(val.id)}>Remove</button></li>
                 <br />
              </ul>
             </>
@@ -21,4 +20,4 @@ const List = props => {
   )
 }
 
-export default List
+export default ListNew
