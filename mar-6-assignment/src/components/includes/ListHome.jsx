@@ -1,9 +1,8 @@
 import React from 'react'
-import { useContext } from 'react'
-import Auth from '../../Context'
+
 
 const ListNew = props => {
-  const x = useContext(Auth);
+//   const x = useContext(Auth);
   // console.log(x.handletoggleUpd);
 //  console.log(location);
   return (

@@ -35,9 +35,13 @@ function App() {
             handleLogIn , 
             toggleUpd , 
             handletoggleUpd,
+          //  eslint-disable-next-line
             logIn,
+          //  eslint-disable-next-line
             handleLogIn , 
+          //  eslint-disable-next-line
             toggleUpd , 
+          //  eslint-disable-next-line
             handletoggleUpd, 
             idStore , 
             handleIdStore}}>

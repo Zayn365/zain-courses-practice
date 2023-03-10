@@ -18,6 +18,9 @@ function handleUserName (e) {
 }     
 function submitAuth() {
         setAutho([{username: userName, email: email , password: password}, ...autho]);
+        setEmail('');
+        setPassword('');
+        setUserName('');
      }
 // const spreadAuth = [...autho];
 // console.log(...spreadAuth);  
