@@ -1,11 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 function AuthFunc() {
+const authValue = window.localStorage.getItem("auth");
+const Value = authValue ? JSON.parse(authValue) : [];
+// console.log(Value);        
 const [email , setEmail] = useState('');
 const [password , setPassword] = useState('');
 const [userName , setUserName] = useState('');
-const [autho , setAutho] = useState([{username: 'zain',email: 'zain@gmail.com' , password: '123456'}]);
+const [autho , setAutho] = useState([{username: 'zain',email: 'zain@gmail.com' , password: '123456'}, ...Value]);
+
+useEffect(() => {
+   window.localStorage.setItem("auth" , JSON.stringify(autho));     
+} , [autho])
 
 function handleEmail(e) {
         setEmail(e.target.value);

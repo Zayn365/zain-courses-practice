@@ -27,7 +27,7 @@ const SignIn = () => {
             <br />
             <button type='button' onClick={() => x.submitAuth()}>ADD ME</button>
             <br />
-            <button type='submit'>SignUp/SignIn</button>
+            <a href="/"><button type='submit'>SignUp/SignIn</button></a>
         </form>
     </div>
   )

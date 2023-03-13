@@ -1,6 +1,6 @@
 import React from 'react';
 import { useContext } from 'react';
-import { Routes , Route } from 'react-router-dom';
+import { Routes , Route , Navigate } from 'react-router-dom';
 import Home from './../pages/Home';
 import About from './../pages/About';
 import Contact from './../pages/Contact';
@@ -20,7 +20,8 @@ const MyRoutes = () => {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/setting" element={!x.logIn ? <Error /> : <Settings />} />
-            <Route exact path="/signin-signup" element={<SignIn auth={x.autho} />} />
+           <Route exact path="/signin-signup" element={!x.logIn ? <SignIn auth={x.autho} /> : <Navigate exact to="/" />} /> 
+            <Route path='*' element={<Error />} />
         </Routes>
     </div>
   )
