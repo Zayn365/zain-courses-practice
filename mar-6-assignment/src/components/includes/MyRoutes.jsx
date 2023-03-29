@@ -20,7 +20,7 @@ const MyRoutes = () => {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/setting" element={!x.logIn ? <Error /> : <Settings />} />
-           <Route exact path="/signin-signup" element={!x.logIn ? <SignIn auth={x.autho} /> : <Navigate exact to="/" />} /> 
+            <Route exact path="/signin-signup" element={!x.logIn ? <SignIn auth={x.autho} /> : <Navigate exact to="/" />} /> 
             <Route path='*' element={<Error />} />
         </Routes>
     </div>
