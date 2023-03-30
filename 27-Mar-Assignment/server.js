@@ -6,7 +6,7 @@ const arr = [];
 app.use(cors());
 app.use(express.json()); // add this line to parse incoming JSON payloads
 var obj = {id: 1 , task: 'Getting Ready for Interview'};
-arr.push(obj);
+// arr.push(obj);
 
 
 console.log(arr);
