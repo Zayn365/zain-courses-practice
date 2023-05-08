@@ -5,9 +5,13 @@
 
  # Video Example
 
-[![Demo Video](demo.mp4)](demo.mp4)
+[Demo Video](demo.mp4)
 
 
 ## Usage
 
 To use the project, simply download the code and run the following commands:
+
+ - nodemon server.js or npm start (cd root)
+ - Extract the todos from .zip then use (npm install)
+ - npm start (cd /todos)
